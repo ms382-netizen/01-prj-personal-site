@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maryam — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+ 
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="#top" class="nav-mark">M.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+ 
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-border" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker">Rice University · Computer Science &amp; Cognitive Science</p>
+    <h1 class="hero-title">Maryam<br>builds things worth<br>paying attention to.</h1>
+    <p class="hero-sub">Sophomore at Rice, originally from Lahore, working at the intersection of code, cognition, and design — currently telling stories for Rice's Earth, Environmental &amp; Planetary Sciences department, one post at a time.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <svg class="hero-motif" aria-hidden="true" viewBox="0 0 1200 200" preserveAspectRatio="none">
+    <defs>
+      <pattern id="blockPrint" width="60" height="60" patternUnits="userSpaceOnUse">
+        <rect width="60" height="60" fill="none"/>
+        <circle cx="30" cy="30" r="4" fill="var(--gold)"/>
+        <path d="M30 10 L34 26 L50 30 L34 34 L30 50 L26 34 L10 30 L26 26 Z" fill="none" stroke="var(--gold)" stroke-width="1.5" opacity="0.55"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="200" fill="url(#blockPrint)"/>
+  </svg>
+</section>
+ 
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="section-grid">
+    <div class="section-label">
+      <span class="label-num">About</span>
+    </div>
+    <div class="section-body">
+      <p class="lede">I'm a sophomore at Rice University double majoring in Computer Science and Cognitive Science — which is a fancy way of saying I like figuring out how systems think, whether that system is a neural network or a person scrolling Instagram at 11pm.</p>
+      <p>I moved to Houston from Lahore, Pakistan, and I've spent the time since learning to build — web pages, content strategies, ambassador programs, and (very much still in progress) my own front-end skills. I care about work that's both technically sound and genuinely good to look at, which is probably why I ended up somewhere between a CS degree and a social media internship.</p>
+      <p>Outside of school and work, I'm usually deep in a new skincare rabbit hole, singing along to something in a language I'm still practicing, or picking apart the aesthetics of my favorite films.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ SKILLS ============ -->
+<section class="section skills" id="skills">
+  <div class="section-grid">
+    <div class="section-label">
+      <span class="label-num">Skills</span>
+    </div>
+    <div class="section-body">
+      <ul class="skills-grid">
+        <li class="skill-card">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML &amp; CSS</h3>
+          <p>Structuring and styling pages from scratch, this one included.</p>
+        </li>
+        <li class="skill-card">
+          <i class="fa-brands fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Currently building toward React and Next.js.</p>
+        </li>
+        <li class="skill-card">
+          <i class="fa-solid fa-share-nodes"></i>
+          <h3>Social Media Strategy</h3>
+          <p>Planning and producing content for a university department's audience.</p>
+        </li>
+        <li class="skill-card">
+          <i class="fa-solid fa-brain"></i>
+          <h3>Cognitive Science</h3>
+          <p>Thinking about how people process information — and designing for it.</p>
+        </li>
+        <li class="skill-card">
+          <i class="fa-solid fa-palette"></i>
+          <h3>Visual &amp; UI Design</h3>
+          <p>An eye for color, layout, and the small details that make something feel finished.</p>
+        </li>
+        <li class="skill-card">
+          <i class="fa-solid fa-users"></i>
+          <h3>Program Building</h3>
+          <p>Designing and launching a student ambassador program from the ground up.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="section-grid">
+    <div class="section-label">
+      <span class="label-num">Experience</span>
+    </div>
+    <div class="section-body">
+      <div class="exp-row">
+        <div class="exp-when">2025 — Present</div>
+        <div class="exp-what">
+          <h3>Social Media Intern</h3>
+          <p class="exp-org">Rice University, Earth, Environmental &amp; Planetary Sciences (EEPS)</p>
+          <p>Producing and planning social content for the department, and building out a Student Ambassador Program to connect undergraduates with EEPS.</p>
+        </div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-when">2024 — Present</div>
+        <div class="exp-what">
+          <h3>B.S., Computer Science &amp; Cognitive Science</h3>
+          <p class="exp-org">Rice University</p>
+          <p>Coursework spanning discrete math, computer organization, and calculus, alongside a growing focus on front-end development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ PROJECTS ============ -->
+<section class="section projects" id="projects">
+  <div class="section-grid">
+    <div class="section-label">
+      <span class="label-num">Projects</span>
+    </div>
+    <div class="section-body">
+      <p class="projects-note">A few things I've built. <em>(Swap these three cards for your real projects — title, one-line description, and links to the repo + live demo.)</em></p>
+      <div class="projects-grid">
+ 
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Web</span>
+          </div>
+          <h3>Project One</h3>
+          <p>One or two sentences on what it does and why you built it.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+ 
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">App</span>
+          </div>
+          <h3>Project Two</h3>
+          <p>One or two sentences on what it does and why you built it.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+ 
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Design</span>
+          </div>
+          <h3>Project Three</h3>
+          <p>One or two sentences on what it does and why you built it.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="contact-inner">
+    <h2>Let's talk.</h2>
+    <p>Open to internships, collaborations, and conversations about design, code, or cognition.</p>
+    <div class="contact-links">
+      <a href="mailto:youremail@rice.edu"><i class="fa-solid fa-envelope"></i> youremail@rice.edu</a>
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</section>
+ 
+<footer class="site-footer">
+  <p>&copy; 2026 Maryam. Built with HTML, CSS, and a little help from AI.</p>
+</footer>
+ 
+<script src="script.js"></script>
 </body>
 </html>
