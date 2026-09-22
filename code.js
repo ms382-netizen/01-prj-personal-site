@@ -1,3 +1,9 @@
+
+if (window.location.hash) {
+  window.history.replaceState(null, '', window.location.pathname + window.location.search);
+  window.scrollTo(0, 0);
+}
+
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
