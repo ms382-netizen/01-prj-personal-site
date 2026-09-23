@@ -175,6 +175,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .btn-ghost:hover { border-color: var(--marigold); color: var(--marigold); transform: translateY(-2px); }
 
+.btn-outline {
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  margin-top: 0.5rem;
+}
+.btn-outline:hover { background: var(--rani); border-color: var(--rani); color: var(--white); transform: translateY(-2px); }
+
 .hero-motif {
   display: block;
   width: 100%;
